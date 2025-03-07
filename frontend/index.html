@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'self' https://cdnjs.cloudflare.com 'unsafe-inline';
+        style-src 'self' 'unsafe-inline';
+        connect-src 'self' http://localhost:8000 ws://localhost:8000;
+    ">
+    <title>EduPlay</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.min.js"></script>
+</head>
+<body>
+    <div id="game-container">
+        <div id="login">
+            <h1>EduPlay</h1>
+            <input type="text" id="username" value="student1" placeholder="Username" autocomplete="username">
+            <input type="password" id="password" value="math123" placeholder="Password" autocomplete="current-password">
+            <button onclick="login()">Login</button>
+        </div>
+        <div id="difficulty" style="display: none;">
+            <h1>Choose Difficulty</h1>
+            <button onclick="startGame('elementary')">Elementary</button>
+            <button onclick="startGame('highschool')">High School</button>
+            <button onclick="startGame('college')">College</button>
+            <button onclick="startGame('coding')">Coding</button>
+        </div>
+        <div id="game" style="display: none;">
+            <h1>Solve: <span id="equation"></span></h1>
+            <p>Score: <span id="score-value">0</span></p>
+            <p id="feedback"></p>
+            <div id="canvas"></div>
+            <p id="instructions">Slice the fruit with the correct answer!</p>
+        </div>
+    </div>
+    <script src="sketch.js"></script>
+</body>
+</html>
