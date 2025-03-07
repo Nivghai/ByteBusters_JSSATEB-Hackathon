@@ -1,2 +1,2 @@
 # BYTEBUSTERS_JSSATEB-Hackathon
-an education based interactive game made for students(elementary-collegiate)[JSSATEB Hackathon]
+EduPlay turns math and coding into a gesture-driven game. Players slice fruits to solve puzzles from basic arithmetic to coding, with levels for all ages. Features include timed challenges, scoring (+10/-5), and breaks ("Screen Freeze"). Fruits fade in, vanish after correct answers (with "Correct Answer!" feedback), and refresh with new questions tailored to the player’s difficulty, ensuring a fun, interactive learning experience.
